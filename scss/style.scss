@@ -1,0 +1,166 @@
+@import "reset";
+@import "checkbox";
+@import "cross";
+@import "owfont-regular";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    color: rgb(236, 236, 236);
+    // background-image: url("../assets/images/evening/01.jpg");
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2, input {
+    font-size: 4em;
+    color: rgb(236, 236, 236);
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+blockquote {
+    font-weight: 200;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__header {
+    align-self: flex-end;
+}
+
+.city {
+    width: 100%;
+    min-width: 50px;
+    // border: 5px solid black;
+    border-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(236, 236, 236);
+}
+
+.helper {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+}
+
+.weather-icon {
+    font-size: 30px;
+    color: #44aadd;
+  }
+  .weather-icon:hover {
+    animation: shake 1.5s;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+  }
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__greeting {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2%;
+}
+
+.greeting__personName {
+    color: rgb(236, 236, 236);
+    display: flex;
+    width: 15%;
+}
+
+.greeting__personName::placeholder {
+    color: rgb(236, 236, 236);
+    opacity: 1;
+    font-size: 1em;
+}
+
+.content__today {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.today__input {
+    border-bottom: 3px solid rgb(236, 236, 236);
+    text-align: center;
+}
+
+.content__task {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.task__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.block__text {
+    margin-right: 2%;
+}
+
+.block__input {
+    margin-right: 3%;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer__button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background-image: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(.8);
+    margin-right: 10px;
+}
+
+.footer__quote {
+    display: flex;
+}

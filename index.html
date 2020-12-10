@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header class="main__header">
+            <div class="city" contenteditable="true">Минск</div>
+            <div class="helper">
+                <i class="weather-icon owf"></i>
+                <div class="temperature"></div>
+                <div class="windSpeed"></div>
+                <div class="humidity"></div>
+                <div class="weather-description"></div>
+                <div class="header__weather"></div>
+            </div>
+        </header>
+
+        <div class="main__content">
+            <h1 class="content__clock"></h1>
+            <h3 class="content_date"></h3>
+            <div class="content__greeting">
+                <h2 class="greeting__dayOfTime">Good evening, </h2>
+                <input class="greeting__personName" type="text" placeholder="Zahar"> </input>
+                <!-- <span class="hide"></span><input class="greeting__personName txt" type="text" placeholder="Zahar"> -->
+            </div>
+            <div class="content__today">
+                <h5 class="today__question">What is your main focus today?</h5>
+                <input type="text" name="" class="today__input">
+            </div>
+            <div class="content__task">
+                <h5>TODAY</h5>
+                <div class="task__block">
+                    <input type="checkbox" id="cb1" class="block__input">
+                    <label for="cb1" class="task_checkbox"><div class="tick"></div></label>
+                    <h2 class="block__text">Lorem, ipsum dolor.</h2>
+                    <div id="cross"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <button class="footer__button"></button>
+            <figure class="footer__quote">
+                <blockquote>
+                  You were not born a winner, and you were not born a loser. You are what you make yourself be.
+                </blockquote>
+                <figcaption> 
+                  Lou Holtz
+                </figcaption>
+              </figure>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
